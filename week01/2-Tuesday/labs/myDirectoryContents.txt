@@ -1,0 +1,22 @@
+.
+..
+.gitignore
+deserts.txt
+glaciers.txt
+islands.txt
+lakes.txt
+mountains.txt
+myDirectoryContents.txt
+newfile.txt
+oceans.txt
+volcanoes.txt
+total 72
+-rw-r--r--  1 matt  staff  201 Nov 10 12:37 deserts.txt
+-rw-r--r--  1 matt  staff  174 Nov 10 12:37 glaciers.txt
+-rw-r--r--  1 matt  staff  130 Nov 10 12:37 islands.txt
+-rw-r--r--  1 matt  staff   97 Nov 10 12:37 lakes.txt
+-rw-r--r--  1 matt  staff  112 Nov 10 12:37 mountains.txt
+-rw-r--r--  1 matt  staff  138 Nov 10 15:33 myDirectoryContents.txt
+-rw-r--r--  1 matt  staff   12 Nov 10 15:30 newfile.txt
+-rw-r--r--  1 matt  staff   69 Nov 10 12:37 oceans.txt
+-rw-r--r--  1 matt  staff  192 Nov 10 12:37 volcanoes.txt
