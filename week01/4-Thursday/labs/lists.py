@@ -29,7 +29,7 @@ count = 0
 
 # 4. Add Pluto to the planet list.
 
-# planets.append("Pluto")
+planets.append("Pluto")
 
 # print(planets)
 
@@ -55,11 +55,20 @@ Houston = HoustonCities + ClearLakeCities
 
 # print(Houston)
 
+index = 0
+while index < len(Houston):
+    print(Houston[index])
+    index += 1
+
+
+
 # 6. Since Pluto isn't really a planet, delete it from the planet list
 
 # del planets[8]
 # print(planets)
-
+#or 
+# planets.pop()
+# print(planets)
 
 # 7. Create the following lists that are a subset of the Houston list:
 # htx1 = The first 4 cities
