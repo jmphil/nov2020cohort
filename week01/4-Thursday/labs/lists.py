@@ -12,27 +12,53 @@ planet8 = "Venus"
 
 planets = ["Earth", "Juptier", "Neptune", "Mars", "Saturn", "Mercury", "Uranus", "Venus"]
 
-print(planets [0])
+# print(planets [0])
 # 2. Print out how many elements are in the planet list
 
+# lengthOfList = len(planets)
+# print(lenghtOfList) 1 way count list
+
+# print(len(planets)) #another way to count list
 
 # 3. Create a while loop that iterates through each of the items in the planet list
 # and changes them to lowercase .
 
+count = 0
+
+
 
 # 4. Add Pluto to the planet list.
 
+# planets.append("Pluto")
+
+# print(planets)
 
 # 5. Combine the follwing 2 lists into a list called Houston.
 # Find how many cities are listed in the Houston list
 # Add more cities to the Houston list.
 # Print the list cities (one city per line)
 
-# HoustonCities = ["Katy", "Memorial City", "Sugar Land",
-#                  "The Heights", "River Oaks", "Pasadena"]
-# ClearLakeCities = ["League City", "Kemah", "Seabrook", "Webster", "El Lago"]
+HoustonCities = ["Katy", "Memorial City", "Sugar Land", 
+                 "The Heights", "River Oaks", "Pasadena"]
+ClearLakeCities = ["League City", "Kemah", "Seabrook", "Webster", "El Lago"]
+
+# print(HoustonCities)
+# print(ClearLakeCities)
+
+Houston = HoustonCities + ClearLakeCities
+# print(Houston)
+
+# print(len(Houston))
+
+# newTowns = ["Tupalo", "Great Lakes"]
+# Houston.append(newTowns)
+
+# print(Houston)
 
 # 6. Since Pluto isn't really a planet, delete it from the planet list
+
+# del planets[8]
+# print(planets)
 
 
 # 7. Create the following lists that are a subset of the Houston list:
