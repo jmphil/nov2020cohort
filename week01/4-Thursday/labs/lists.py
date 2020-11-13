@@ -113,3 +113,5 @@ while index < len(Houston):
 # i.e.  1x1 = 1
 #        1x2 = 2
 #        1x3 = 3
+
+# use for loop
