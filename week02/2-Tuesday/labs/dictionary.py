@@ -129,17 +129,34 @@
         
 # print(word_histogram("hotdog"))
 
-def word_histogram(string):
-    result = {}
-    for n in string:
-        result[n] = result.get(n, 0) + 1
-    return result
+# def word_histogram(string):
+#     result = {}
+#     for n in string.split:
+#         result[n] = result.get(n, 0) + 1
+#     return result
 
         
-print(word_histogram("hotdog"))
+# print(result)
 
 
-import pickle
+# Given a histogram tally (one returned from either letter_histogram or word_histogram), print the top 3 words or letters.
+
+def word_histogram(string):
+    result = {}
+    for n in string.split():
+        if n not in string:
+            result[n] = 1
+        else:
+            result[n] += 1
+    return result
+
+new_result = (input('text here: '))
+print(word_histogram(new_result))
+
+
+
+
+# import pickle
 
 
 
@@ -172,5 +189,3 @@ import pickle
 
 
 # print(name)
-
-
