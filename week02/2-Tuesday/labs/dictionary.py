@@ -68,23 +68,23 @@
 
 # 3. Nested dictionaries
 
-ramit = {
-    'name': 'Ramit',
-    'email': 'ramit@gmail.com',
-    'interests': ['movies', 'tennis'],
-    'friends': [
-        {
-            'name': 'Jasmine',
-            'email': 'jasmine@yahoo.com',
-            'interests': ['photography', 'tennis']
-        },
-        {
-            'name': 'Jan',
-            'email': 'jan@hotmail.com',
-            'interests': ['movies', 'tv']
-        }
-    ]
-}
+# ramit = {
+#     'name': 'Ramit',
+#     'email': 'ramit@gmail.com',
+#     'interests': ['movies', 'tennis'],
+#     'friends': [
+#         {
+#             'name': 'Jasmine',
+#             'email': 'jasmine@yahoo.com',
+#             'interests': ['photography', 'tennis']
+#         },
+#         {
+#             'name': 'Jan',
+#             'email': 'jan@hotmail.com',
+#             'interests': ['movies', 'tv']
+#         }
+#     ]
+# }
 # 3a. Write a python expression that gets the email address of Ramit.
 
 # result = ramit["email"]
@@ -120,6 +120,15 @@ ramit = {
 
 
 
+# def word_histogram(string):
+#     result = {}
+#     for n in string:
+#         result[n] = result.get(n, 0) + 1
+#     return result
+
+        
+# print(word_histogram("hotdog"))
+
 def word_histogram(string):
     result = {}
     for n in string:
@@ -128,3 +137,40 @@ def word_histogram(string):
 
         
 print(word_histogram("hotdog"))
+
+
+import pickle
+
+
+
+# ramit = {
+#     'name': 'Ramit',
+#     'email': 'ramit@gmail.com',
+#     'interests': ['movies', 'tennis'],
+#     'friends': [
+#         {
+#             'name': 'Jasmine',
+#             'email': 'jasmine@yahoo.com',
+#             'interests': ['photography', 'tennis']
+#         },
+#         {
+#             'name': 'Jan',
+#             'email': 'jan@hotmail.com',
+#             'interests': ['movies', 'tv']
+#         }
+#     ]
+# }
+
+
+# with open('ramit.pickle', 'wb') as fh:
+#   pickle.dump(ramit, fh)
+
+
+# with open('ramit.pickle.txt', 'rb') as fx:
+#     pickle.load(fx)
+
+
+
+# print(name)
+
+
