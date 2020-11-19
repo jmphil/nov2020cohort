@@ -6,7 +6,7 @@ d = {
 }
 
 
-def phonebook(d):
+def phonebook (d):
     print("Electronic Phone Book")
     print("=" * 21)
     print(dedent("""
@@ -18,7 +18,7 @@ def phonebook(d):
     """))
     choice = input("What do you want to do (1-5)? ")
 
-    if choice == "1":
+    while choice == "1":
         name = input("Name: ")
         if name in d:
             print(d[name])

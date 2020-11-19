@@ -1,10 +1,27 @@
 
 
 # 1. Create an empty class called "Student"
-
+# class Student:
+#     def __inti__(self, name):
+#         self.name = name
+        
+#     def greeting(self, name):
+        
+#         return f'Good morning, {self.name}'
 
 # 2. Create 5 students objects (instances of the class "Student") of "Student" types
+    
+# Matt = Student("Matt")
+# Zach = Student("Zach")
+# Matthew = Student("Matthew")
+# Kim = Student("Kim")
+# Ian = Student("Ian")
 
+# print(Matt.greeting()
+# print(Zach.greeting()
+# print(Matthew.greeting()
+# print(Kim.greeting()
+# print(Ian.greeting()
 
 # 3a. Create a "greeting" method inside of the class "Student" class that
 # takes as a parameter "name". The return of the  method should be
@@ -19,6 +36,8 @@
 # 5c. Run your lab.py again and you should see a print statement for each student object
 # That you created
 
+#  def __init__(self, name):
+#         self.name = name
 
 # 6a. Pass in "name" as a parameter to your Student constructor.
 # 6b. Create an instance variable for name
@@ -58,14 +77,50 @@
 
 # Create a new class called Car with the following method :
 # CarDetails which prints "Here are details of this car"
+class Car:
+    def __inti__(self, make, model, color):
+        self.make = make
+        self.model = model
+        self.color = color
+
+    def car_type(self):
+        print("Here are the details for this car")
+
+# my_car = Car("2012", "Ford", "Explorer", "Gas")
+
+
+
+
 
 # Create a new class called Hybrid that inherits from the Car class
 #  with the following method: CarType which prints "I am a hybrid car"
 
 
+class Hybrid(Car):
+
+
+    def car_type(self):
+        print("I am a hyrid car")
+
+
 # Create a new class called Electric that inherits from the Car class
 #  with the following  method: CarType which prints "I am a hybrid car"
 
+class Electric(Car):
+
+
+    def car_type(self):
+        print("I am an electric car")
+
+
+
+prius = Hybrid("Toyota", "rius", "Blue")
+
+tesla = Electric("Tesla", "ModelS", "white")
+
+
+print(Prius.make)
+prius.car_type
 # Create a Hybrid instance and an Electric instance
 # Call the method CarType on the Hybrid Instance and Electric Instance
 # Call the method Car Details on each instance
