@@ -1,9 +1,10 @@
+
 nav {
     display: flex;
     justify-content: space-between;
     background-color: silver;
     color: rgb(29, 29, 27);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 5px 10px;
     /* opacity: 50%; */
     position: sticky;
@@ -38,7 +39,58 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto !important;
+    position: sticky;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    padding-top: 15px;
+    
 
     
 
+    
+
+}
+
+@media all and (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        display: flex;
+        text-align: center;
+        
+    }
+    @media (max-width:767px) {
+        .portfolio img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    
+    @media (min-width:768px) {
+        .portfolio img {
+            max-width: 240px;
+            max-height: 240px;
+        }
+    }
+    
+    @media (min-width:992px) {
+        .portfolio img {
+            max-width: 314px;
+            max-height: 314px;
+        }
+    }
+    
+    @media (min-width:1200px) {
+        .portfolio img {
+            max-width: 380px;
+            max-height: 380px;
+        }
+    }
+    
+
+    }
 }
