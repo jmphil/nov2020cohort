@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+div {
+    display: fixed;
+    background-color: black;
+    
+    
+}
+
+p {
+
+    color: white;
+    list-style: none;
+    margin-left: 10px;
+}   
+
+a {
+
+    color: white;
+    text-decoration: none;
+}
+
+p:hover{
+    color: silver;
+    border-radius: 5px;
+
+}

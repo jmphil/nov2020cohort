@@ -1,0 +1,44 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: silver;
+    color: rgb(29, 29, 27);
+    border-radius: 10px;
+    box-shadow: 5px 10px;
+    /* opacity: 50%; */
+    position: sticky;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font size: 20px;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
