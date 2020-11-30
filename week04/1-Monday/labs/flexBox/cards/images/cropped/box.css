@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+    div{
+        display:flex;
+        justify-content: center;
+        color:white;
+        padding-top: 7vh;
+        padding-bottom: 7vh;
+        margin-bottom: 10px;
+    }
+    header{
+        font-family:;
+        font-size: 40px;
+        background-color: rgb(58, 56, 56);
+    
+    }
+    Main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
