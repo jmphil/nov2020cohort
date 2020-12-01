@@ -1,8 +1,9 @@
 
 .header {
     height: 600vh;
-    width: 50vw;
+    width: 100%;
     background-color: pink;
+    overflow: hidden;
 }
 .top{
     top: 0px;
