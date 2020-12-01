@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-restaurant
-
--body
-
-header with nav bar use b4 nav bar
-    -md lg screen = use video background
-    -sm xs = use image instead
-    -title
-    -opacity -layer
-    -video -layer
-
-
-
-
-main content 
-
-footer
-=======
 
 - header 
     - md larger - video background 
@@ -33,4 +14,3 @@ footer
 
 
 - footer
->>>>>>> 2824ea2e647a4ea885d883db2ddac95ca9ae74aa
