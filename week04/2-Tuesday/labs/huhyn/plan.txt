@@ -1,0 +1,17 @@
+restaurant
+
+-body
+
+header with nav bar use b4 nav bar
+    -md lg screen = use video background
+    -sm xs = use image instead
+    -title
+    -opacity -layer
+    -video -layer
+
+
+
+
+main content 
+
+footer
