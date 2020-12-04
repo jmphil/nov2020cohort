@@ -97,3 +97,4 @@ function add(num1, num2){
 var result = add(4, 6)
 
 console.log(result);
+
