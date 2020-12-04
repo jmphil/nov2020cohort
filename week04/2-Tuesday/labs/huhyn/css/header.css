@@ -2,7 +2,7 @@
 .header {
     height: 600vh;
     width: 100%;
-    background-color: pink;
+    /* background-color: pink; */
     overflow: hidden;
 }
 .top{
