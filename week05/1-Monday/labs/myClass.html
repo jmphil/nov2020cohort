@@ -6,20 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+    <ul>
+
+
+    </ul>
     
-    Hello World
 
 
     <script>
-        var arr = [83, 2, 93, 34, 10]
+        var days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
 
-        arr.forEach(function(val){
-            
-            if(index + 1 < arr.lenght){
-                console.log(val * arr[index + 1]);
-            }
+        var newDays = days.map(funtion(day){
 
+            return `<li>$(day)</li>`;
         })
+
+        console.log(newDays);
+
+    </script>
 
         // var add = function(num1, num2){
         //     return num1 + num2;
@@ -52,6 +56,6 @@
         // console.log(greeting);
 
 
-    </script>
+    
 </body>
 </html>

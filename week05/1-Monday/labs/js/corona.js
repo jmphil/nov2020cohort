@@ -1,3 +1,6 @@
+//loop thru and make a card for each state
+// state name, current cases, current deaths
+// append to the card html code to the row container
 
 var data = [
     {
@@ -807,3 +810,4 @@ var data = [
         testsPerOneMillion: 0
     }
 ]
+
