@@ -30,14 +30,14 @@ var newCompanies = companies.map(function(obj){
 
 //filter all companies with start date greater than 1990
 
-var a1990 = companies.filter(function(obj){
+// var a1990 = companies.filter(function(obj){
 
-    return obj.start >= 1990
+//     return obj.start >= 1990
     
 
-})
+// })
 
-console.log(a1990);
+// console.log(a1990);
 // })
 // var largeAges = ages.some(function(age){
 
