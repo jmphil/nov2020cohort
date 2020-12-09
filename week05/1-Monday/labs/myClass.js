@@ -40,10 +40,10 @@
 
 // var newStudent = student.map(function)
 
-var arr = [3, 4, 6, 10, 33, 93];
+// var arr = [3, 4, 6, 10, 33, 93];
 
-var eitherTorF = arr.some(funtion(num){
+// var eitherTorF = arr.some(funtion(num){
 
-    return num > 2;
-});
-console.log(eitherTorF)
+//     return num > 2;
+// });
+// console.log(eitherTorF)
