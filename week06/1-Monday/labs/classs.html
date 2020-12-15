@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dc {
+            background-color: yellow;
+        }
+        .purple{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- <a class="DC" href="#">Google</a> -->
+    <a href="#">Yahoo</a>
+    <a class="dc" href="#">Insta</a>
+    <a href="#">Fabo</a>
+
+    <img id ="1" src="" alt="">
+    <img id ="2" src="" alt="">
+    <img id= "3" src="" alt="">
+
+    <div class="dc">
+        Hiya
+    </div>
+    <div class="dc" id="1">
+        Hi There
+    </div>
+
+    <button >Click Me!</button>
+    
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script>
+        $(() => {
+
+            $('body').keydown(() => {
+                
+                // alert('Hello world');
+                $('div').removeClass('dc')
+                $('div').addClass('purple')
+            })
+            $('body').keyup(() => {
+                
+                
+                $('div').removeClass('purple')
+                $('div').addClass('dc')
+            })
+
+
+            
+
+
+            // $('button').click(() => {
+            //     $('div').toggleClass('dc');
+
+            // })
+            //jQuery
+            // let div = document.querySelector('div');
+            // div.innerHTML= '<B>Hello There</B>'
+
+            // $('div').html('<b>New way of hello with jQuery</b>')
+            // let results = $('body')
+            // console.log(results);
+
+            // let results = $('#1')
+            // console.log(results);
+
+            // let results2 = $('.DC')
+            // console.log(results2);
+
+            // let $div = $('<div>');
+
+            // let $a = $('<a>', {
+            //     'class': 'DC',
+            //     'text': 'Click me!',
+            //     'href': 'http://google.com'
+            // })
+            // let $div = $('div')
+            
+            // $div.addClass('DC')
+            // console.log($div);
+
+            // $div.append($a)
+            
+            // let $div = $('div');
+
+            // $div.removeClass("DC")
+
+            // $('div').click((e)=>{
+                //event logic
+
+            })
+
+
+    </script>
+</body>
+</html>
