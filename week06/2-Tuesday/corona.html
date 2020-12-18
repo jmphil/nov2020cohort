@@ -20,14 +20,19 @@
     .then(data => {
         console.log(data);
 
+       
+
         let htmlArr = data.map(obj =>{
                     return `<li>${obj.state} cases: ${obj.cases} today: ${obj.todayCases}</li>`
                 })
                 let ul = document.querySelector('ul');
                 ul.innerHTML = htmlArr.join('');
+                
+                for (var i = 0; i < data.length; i++) {
+        
+                    $('#printcard').append(ul);
+            })
             
-        })
-
         // .catch((error)=>{
         //         console.log(error)
         //     })
