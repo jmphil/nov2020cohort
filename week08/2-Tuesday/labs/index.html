@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node</title>
+</head>
+<body>
+    <h1>Starting Node</h1>
+
+    <div>
+       <button id="myButton">Click Here</button>
+    </div>
+
+    <ul>
+
+
+    </ul>
+
+    <script>
+
+        fetch()
+        let button = document.querySelector('#myButton');
+
+        button.addEventListener('click', ()=>{
+            fetch('http://localhost:3000/data')
+            .then(response => response.json())
+            .then(data =>{
+                console.log(data)
+
+                let names = data.map(obj =>{
+                    return `<li>${obj.firstName} ${obj.lastName}</li>`
+                })
+
+                let ul = document.querySelector('ul');
+                ul.innerHTML = names.join('');
+            })
+        })
+
+    </script>
+</body>
+</html>
