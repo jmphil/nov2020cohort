@@ -1,4 +1,4 @@
-let someLastName = require('./sample')
+let someLastName = require('./js/sample')
 
 let lastName = "Phillips"
 

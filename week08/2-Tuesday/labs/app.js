@@ -1,7 +1,7 @@
 //Must restart server anytime changes are made in node.js
 const http = require('http');
     // console.log(http);
-const someName = require('./sample');
+const someName = require('./js/sample');
 console.log(lastName); //var from sample.js
 
 const server = http.createServer((req, res) => {

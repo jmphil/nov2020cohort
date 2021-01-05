@@ -7,7 +7,7 @@
 
 // module.exports = name;
 
-let Stack = require(`./stack`)
+let Stack = require(`./js/stack`)
 
 let stack1 = new Stack();
 stack1.push(7)
