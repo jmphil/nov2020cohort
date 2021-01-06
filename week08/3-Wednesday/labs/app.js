@@ -3,18 +3,14 @@ const app = express();
 
 app.use(express.static('public'));
 
-var _eval = require('eval')
-var res = _eval(content /*, filename, scope, includeGlobals */)
+app.use(require('./routes/index'));
 
-app.get('/', (req, res) => {
+app.get('/about', (req, res) => {
     
-    res.send('<h1>Hello World!</h1>');
+    res.send(`
+    <link rel="stylesheet" href="css/global.css"
+    <h1>You've reached the about page</h1>`);
   });
-
-// app.get('/about', (req, res) => {
-    
-//     res.send("<h1>You've reached the about page</h1>");
-//   });
 // app.get('/cats?', (req, res) => {
     
 //     res.send("<h1>Cat Lovers</h1>");
