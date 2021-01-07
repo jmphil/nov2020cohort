@@ -10,10 +10,20 @@
 <body>
 
     <h1>Home Page</h1>
-
-     <img src="<%= pic %> " alt="">
     
+    <img src="<%= pic %> " alt="">
 
+    <% names.forEach(name => { %> 
+
+        <h2><%=name %> </h2>
+
+    <% }) %> 
+        
+    <!-- <%= data %>  -->
+
+    <% data.forEach(el => { %> 
+        <h3> <%= el.state %> </h3>
+    <% }) %> 
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error ex, perspiciatis accusamus cupiditate sequi quis, quos, omnis dicta autem ea distinctio vero deleniti optio? Libero modi dolores neque ut odit?
 
 </body>

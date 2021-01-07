@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const axios = require('axios');
 
 let pictures = [
     "https://i.pinimg.com/originals/f4/01/0b/f4010b762ef1cd617f5e9a0a8ca0533a.jpg",
@@ -25,10 +26,26 @@ let cities = [
     "Miami"
 ]
 
-router.get('/', (req, res) => {
+let num = 4;
 
+let obj = {
+     firstName: "Matt",
+     lastName: "Phillips"
+ }
+
+router.get('/', async (req, res) => {
+
+    let data = await axios.get('https://corona.lmao.ninja/v2/states');
+    //async await
+    
+    
+    
     res.render('index', {
-        pic: pictures
+        pic: pictures,
+        names: nameArr,
+        num: num,
+        // obj: obj
+        data: data.data
     })
 
     // res.render('index', {
@@ -37,7 +54,7 @@ router.get('/', (req, res) => {
     //     pic3: pictures[2],
     //     Atlanta: cities[0],
     //     Houston: cities[1],
-    //     Seattle: cities[2],
+    //     Seattle: cities[2]
 
 
     // })
@@ -47,7 +64,7 @@ router.get('/', (req, res) => {
     //     lastName: "Jackson"
 
     // })   
-})
+});
 
 router.get('/:id', (req, res) => {
   
@@ -55,7 +72,7 @@ router.get('/:id', (req, res) => {
     res.render('index', {
         pic: pictures[id]
     })
-})
+});
 
 
 
