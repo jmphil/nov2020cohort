@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
-
 app.use(express.static('public'));
 
-app.use(require('./routes/index'));
+// app.use(require('./routes/index'));
+
+
 
 app.get('/about', (req, res) => {
     
@@ -16,15 +17,17 @@ app.get('/about', (req, res) => {
 //     res.send("<h1>Cat Lovers</h1>");
 //   });
 
-app.get('/dogs', (req, res) => {
+// app.get('/dogs?', (req, res) => {
     
-    res.send("<h1>Dog Lovers</h1>");
-  });
-
-// app.get('batman', (req, res) => {
-    
-//     res.send("<h1>Batman or Batwoman?</h1>");
+//     res.send("<h1>Dog Lovers</h1>");
 //   });
+
+// app.get('/cats?_and_dogs?', (req, res) => {
+    
+//     res.send(`<h1>"Living Together"</h1>`);
+//   });
+
+
 
 
 
@@ -80,6 +83,6 @@ app.get('/flights/:from-:to', (req, res) =>{
              Arriving: ${req.params.to}`);
   });
 
-app.listen(4000, () => {
-    console.log("running on port 4000")
-})
+// app.listen(4000, () => {
+//     console.log("running on port 4000")
+// })
