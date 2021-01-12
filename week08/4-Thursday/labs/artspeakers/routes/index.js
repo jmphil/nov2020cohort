@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
     res.render('index', {
         
-        pageTitle: "Roux Meetups"
+        pageTitle: "Roux Meetups",
         photos: pagePhotos
     });
 
@@ -26,7 +26,6 @@ router.get('/', (req, res) => {
 });
 
 
-
-
-
 module.exports = router
+
+
