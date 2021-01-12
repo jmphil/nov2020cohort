@@ -2,12 +2,43 @@ const express = require('express');
 const router = express.Router();
 let dataFile = require('../data/data.json')
 // const axios = require('axios');
+let pageSpeakers = dataFile.speakers; //[{}, {}, {}]
 
-router.get('/', (req, res) => {
+router.get('/speakers', (req, res) => {
+    //all images
+    let pagePhotos = [];
 
-    res.render('speakers')
+    pageSpeakers.forEach(speakerObj =>{
+        pagePhotos = pagePhotos.concat(speakerObj.artwork);
+    })
 
-});
+    res.render('speakers', {
+        artwork: pagePhotos,
+        speakers: pageSpeakers,
+        pageTitle: "Roux"
+    })
+})
 
+router.get('/speakers/:speakerid', (req, res) => {
+  
+    //some comment 
+    let photos = [];
+    let speakers = [];
+
+    pageSpeakers.forEach(speakerObj => {
+
+        if(speakerObj.shortname === req.params.speakerid){
+            photos = speakerObj.artwork;
+            speakers.push(speakerObj)
+        }
+    })
+
+    res.render('speakers', {
+        artwork: photos,
+        speakers: speakers
+    })
+})
+
+module.exports = router;
 
 module.exports = router
