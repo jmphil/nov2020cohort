@@ -1,0 +1,68 @@
+         blouses          |       pants        |       shoes       
+--------------------------+--------------------+-------------------
+ red polka dots           | blue jeans         | black jordans
+ red polka dots           | blue jeans         | red high heels
+ red polka dots           | blue jeans         | yellow flip flops
+ red polka dots           | blue jeans         | brown birkenstock
+ red polka dots           | black jeans        | black jordans
+ red polka dots           | black jeans        | red high heels
+ red polka dots           | black jeans        | yellow flip flops
+ red polka dots           | black jeans        | brown birkenstock
+ red polka dots           | brown bell bottoms | black jordans
+ red polka dots           | brown bell bottoms | red high heels
+ red polka dots           | brown bell bottoms | yellow flip flops
+ red polka dots           | brown bell bottoms | brown birkenstock
+ red polka dots           | blue slacks        | black jordans
+ red polka dots           | blue slacks        | red high heels
+ red polka dots           | blue slacks        | yellow flip flops
+ red polka dots           | blue slacks        | brown birkenstock
+ yellow sun flowers       | blue jeans         | black jordans
+ yellow sun flowers       | blue jeans         | red high heels
+ yellow sun flowers       | blue jeans         | yellow flip flops
+ yellow sun flowers       | blue jeans         | brown birkenstock
+ yellow sun flowers       | black jeans        | black jordans
+ yellow sun flowers       | black jeans        | red high heels
+ yellow sun flowers       | black jeans        | yellow flip flops
+ yellow sun flowers       | black jeans        | brown birkenstock
+ yellow sun flowers       | brown bell bottoms | black jordans
+ yellow sun flowers       | brown bell bottoms | red high heels
+ yellow sun flowers       | brown bell bottoms | yellow flip flops
+ yellow sun flowers       | brown bell bottoms | brown birkenstock
+ yellow sun flowers       | blue slacks        | black jordans
+ yellow sun flowers       | blue slacks        | red high heels
+ yellow sun flowers       | blue slacks        | yellow flip flops
+ yellow sun flowers       | blue slacks        | brown birkenstock
+ white with brown buttons | blue jeans         | black jordans
+ white with brown buttons | blue jeans         | red high heels
+ white with brown buttons | blue jeans         | yellow flip flops
+ white with brown buttons | blue jeans         | brown birkenstock
+ white with brown buttons | black jeans        | black jordans
+ white with brown buttons | black jeans        | red high heels
+ white with brown buttons | black jeans        | yellow flip flops
+ white with brown buttons | black jeans        | brown birkenstock
+ white with brown buttons | brown bell bottoms | black jordans
+ white with brown buttons | brown bell bottoms | red high heels
+ white with brown buttons | brown bell bottoms | yellow flip flops
+ white with brown buttons | brown bell bottoms | brown birkenstock
+ white with brown buttons | blue slacks        | black jordans
+ white with brown buttons | blue slacks        | red high heels
+ white with brown buttons | blue slacks        | yellow flip flops
+ white with brown buttons | blue slacks        | brown birkenstock
+ coding t-shirt           | blue jeans         | black jordans
+ coding t-shirt           | blue jeans         | red high heels
+ coding t-shirt           | blue jeans         | yellow flip flops
+ coding t-shirt           | blue jeans         | brown birkenstock
+ coding t-shirt           | black jeans        | black jordans
+ coding t-shirt           | black jeans        | red high heels
+ coding t-shirt           | black jeans        | yellow flip flops
+ coding t-shirt           | black jeans        | brown birkenstock
+ coding t-shirt           | brown bell bottoms | black jordans
+ coding t-shirt           | brown bell bottoms | red high heels
+ coding t-shirt           | brown bell bottoms | yellow flip flops
+ coding t-shirt           | brown bell bottoms | brown birkenstock
+ coding t-shirt           | blue slacks        | black jordans
+ coding t-shirt           | blue slacks        | red high heels
+ coding t-shirt           | blue slacks        | yellow flip flops
+ coding t-shirt           | blue slacks        | brown birkenstock
+(64 rows)
+
