@@ -2,17 +2,17 @@
 // const sequelize = new Sequelize('sqlite::memory:');
 let db = require('./models');
 
-db.user.update({
-    lastName: 'Phillips'
-  },
-  {
-    where: {
-        id: 2
-    }
-  })
-  .then(updatedRecord=>{
-    console.log(updatedRecord);
-  })
+// db.user.update({
+//     lastName: 'Phillips'
+//   },
+//   {
+//     where: {
+//         id: 2
+//     }
+//   })
+//   .then(updatedRecord=>{
+//     console.log(updatedRecord);
+//   })
 // db.user.findAll()
 // .then(records => {
 //     console.log(records);
@@ -40,4 +40,21 @@ db.user.update({
 //     email: 'bmp@github.com'
     
 // });
+
+db.blogs.findAll({
+    // where: {},
+    include: [{
+        model: db.user,
+        required: true
+
+    }]
+})
+.then(records => {
+    // [{}, {}, {}]\
+
+    records.forEach(blog =>{
+        console.log(blog.title, blog.user.firstName, blog.user.lastName);
+    })
+})
+
 

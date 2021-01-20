@@ -1,0 +1,22 @@
+blog title
+blog body 
+author and publish date 
+content/body 
+
+author id:
+-primary key id
+-firstName
+-lastName
+-bio
+-imageURL
+-email
+-twitter
+-linkedIn
+
+blogs:
+-primary key id
+-title
+-authorID
+-body
+-isPublished: true/false
+-publishDate
