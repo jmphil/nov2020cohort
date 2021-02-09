@@ -11,7 +11,7 @@ class CardList extends Component {
     render() {
         //array of CarDeatil ocomponents
         let cardsArr = data.map(cardObj =>{
-            return <Col md={3}>
+            return <Col md={3} >
                         <CardDetail
                             title={cardObj.title}
                             text={cardObj.text}
