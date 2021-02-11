@@ -12,3 +12,16 @@ body{
     font-family: 'Courier New', Courier, monospace;
     color:  rgb(1, 37, 20);;
 }
+.navAnchor a {
+    font-size: 11px !important;
+    /* color: yellow !important; */
+}
+.quote{
+    font-size: 12px;
+    font-style: italic;
+    color: darkgray;
+}
+.projectHover li:hover{
+    background-color: rgb(250, 247, 210);
+    color: maroon
+}

@@ -3,8 +3,13 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import BaseLayout from './components/layout/BaseLayout';
 import Forms from './components/Forms';
+import FormHooks from './components/FormHooks';
+import Parent from './components/liftingState/Parent';
+import ParentHooks from './components/liftingState/ParentHooks';
+import ProjectManagement from './components/projectManagement/ProjectManagement'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles.css';
+
 
 import {
   BrowserRouter as Router,
@@ -20,6 +25,10 @@ ReactDOM.render(
         <Switch>
           <Route exact path='/' component={App}/>
           <Route path='/forms' component={Forms}/>
+          <Route path='/forms_hooks' component={FormHooks}/>
+          <Route path='/lifting_state' component={Parent}/>
+          <Route path = '/parent_hooks' component={ParentHooks} />
+          <Route path = '/project_management' component = {ProjectManagement} />
           <Route component={NoMatch}/>
         </Switch>
       </BaseLayout>
@@ -27,4 +36,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+
 
