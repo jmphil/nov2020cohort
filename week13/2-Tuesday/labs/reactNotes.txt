@@ -1,2 +1,23 @@
+news
+
 1. hooks
-    - const [count, setCount] = useState(0)
+-react hook useState
+    - const [count, setCount] = useState(0) 
+    -cannot be used in class components
+    -
+
+
+
+-react hook useEffect (takes call back function and dependency array)
+    -useEffect(()=>{
+        //code inside of here 
+    }, [stateVaribale]);
+
+    - can be setup like 
+        - useEffect (()=>{})
+        - useEffect (()=>{}, [])
+        - useEffect (()=>{}, [setVariableToTrack])
+
+create a counter component using functional components and hooks!
+
+Recreate your news API in a functional component using useEffect and useState!
