@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redux</title>
+</head>
+<body>
+    
+    Redux Actions
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+
+    <script>
+        //create some actions
+        //events emitted from components
+
+        //actions = event
+
+        //action creater -> function that returns an object
+
+        const addPerson = (id, name, age) => {
+            //action = object
+            return {
+                type: "ADD", //name of event
+                personData: {
+                    id: id,
+                    name: name,
+                    age: age
+                }
+            }
+        };
+
+
+
+        const removePerson = (id) => {
+            
+            return {
+                type: "REMOVE",
+                personId: id,
+            }
+        }
+
+        let initialState = {
+            person: [],
+            count: 0,
+            date: Date.now
+        }
+        //reducer = function
+        //reducer will update the global state
+        const reducer = (state, action) => {
+            
+            if(state === undefined){
+                state = initialState
+            }
+            //look for matching action type (look for event name)
+            if(action.type === "ADD"){
+                //execute block of code 
+                //purpose of this action is to add a person to the global state
+                //returning new state
+                return{
+                    ...state,
+                    persons: state.person.concat(action.personData)
+                }
+            }
+            else if (action.type === "REMOVE"){
+                //execute block of code
+                //purpose of this is to remove a person from global state
+                return{
+                    ...state,
+                    persons: state.persons.filter(person => person.id !== action.personId)
+                }
+            }
+            else{
+                return state
+            }
+        }
+
+
+        
+        let store = Redux.createStore(reducer); //pass in reducer to function //reducer is like an eventListener 
+
+        let showState = () =>{
+            console.log(store.getState());
+        }
+        store.subscribe(showState)
+
+        store.dispatch(addPerson(1, "Matt", 35))//emitting an action/event
+        store.dispatch(addPerson(2, "Dude", 31))//emitting an action/event
+
+    </script>
+</body>
+</html>
+
+
+            
+        
+        

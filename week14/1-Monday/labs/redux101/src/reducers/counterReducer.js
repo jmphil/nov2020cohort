@@ -1,6 +1,7 @@
 let initialState = {
     count: 0,
-    title: "Counter App"
+    title: "Counter App",
+    persons: [],
 }
 
 const counterReducer = (state, action) => {
@@ -20,6 +21,18 @@ const counterReducer = (state, action) => {
             return {
                 ...state,
                 count: state.count -1
+            }
+        case 'AddPerson':
+            return {
+                ...state,
+                persons: state.persons.concat(action.data)
+
+            }
+        case 'DeletePerson':
+            return{
+                ...state,
+                persons: state.persons.filter(person => action.data.firstName !== person.firstName)
+
             }
         default:
             return state

@@ -1,22 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
-import counterReducer from './reducers/counterReducer';
-import { Router, Switch, Link} from 'react-router-dom';
-        
-import BaseLayout from './components/layout/BaseLayout';
+import {
+  BrowserRouter as Router,
+  Route, Switch
+} from 'react-router-dom'
 
- let store = createStore(counterReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()) //pass in reducer once created
+import reducer from './reducers/counterReducer';
+import App from './App';
+import ViewCount from './components/ViewCount'
+import BaseLayout from './components/layout/BaseLayout'
+import CountHooks from './components/CountHooks';
+import ViewCountHooks from './components/ViewCountHooks';
+import Forms from './components/Forms'
+
+
+let store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()) //reducer
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store = {store}>
+    <Provider store={store}>
       <Router>
         <BaseLayout>
           <Switch>
-            <Route path = '/' component = {App} />
+            <Route exact path='/' component={App}/>
+            <Route path='/count' component={ViewCount}/>
+            <Route path='/count_hooks' component={CountHooks}/>
+            <Route path='/count_view_hooks' component={ViewCountHooks}/>
+            <Route path='/forms' component={Forms}/>
+
           </Switch>
         </BaseLayout>
       </Router>

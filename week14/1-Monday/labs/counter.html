@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+
+    <script>
+        //action create
+
+        //increment
+        const incCount = () => {
+            //action = object
+            return {
+                type: "INCREMENT", //name of event
+                
+                }
+            
+        };
+        //decrement
+        const decCount = () => {
+            
+            return {
+                type: "DECREMENT",
+                
+            }
+        }
+
+        //initial state //where count = 0
+        let initialState = {
+            count: 0,
+        }
+            
+            
+
+        //reducer
+        const reducer =  (state = initialState, action) => {
+            switch(action.type) {
+                case 'INCREMENT':
+                    return {
+                    count: state.count + 1
+                    };
+                case 'DECREMENT':
+                    return {
+                    count: state.count - 1
+                    };
+                default:
+                    return state;
+        }
+}
+
+        //create store
+        let store = Redux.createStore(reducer); //pass in reducer to function //reducer is like an eventListener 
+
+        let showState = () =>{
+            console.log(store.getState());
+        }
+        store.subscribe(showState)
+        //dispatch actions
+        store.dispatch(incCount())    //emitting an action/event
+        store.dispatch(incCount())    //emitting an action/event
+        store.dispatch(incCount())    //emitting an action/event
+        store.dispatch(incCount())    //emitting an action/event
+        store.dispatch(incCount())    //emitting an action/event
+        store.dispatch(decCount())    //emitting an action/event
+        store.dispatch(decCount())    //emitting an action/event
+        store.dispatch(decCount())    //emitting an action/event
+        store.dispatch(decCount())    //emitting an action/event
+        store.dispatch(incCount())    //emitting an action/event
+        store.dispatch(incCount())    //emitting an action/event
+        
+    </script>
+</body>
+</html>

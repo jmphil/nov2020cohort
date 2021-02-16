@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {useDispatch, useSelector} from 'react-redux';
 import increaseAction from '../actions/increaseAction';
 import decreaseAction from '../actions/decreaseAction';

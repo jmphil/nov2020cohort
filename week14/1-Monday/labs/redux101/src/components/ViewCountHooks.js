@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {useSelector} from 'react-redux';
-import increaseAction from '../actions/increaseAction';
-import decreaseAction from '../actions/decreaseAction';
+// import increaseAction from '../actions/increaseAction';
+// import decreaseAction from '../actions/decreaseAction';
 
 const ViewCountHooks = (props) => {
     const count = useSelector(state => state.count);
