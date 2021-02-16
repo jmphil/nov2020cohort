@@ -1,17 +1,44 @@
-import React from "react";
-
 import React, { Component } from 'react'
+import DeleteProduct from './DeleteProduct';
+import AddProduct from './AddProduct';
+//bring in redux to be able to see the global state(provide)
+import { connect }  from 'react-redux';
 
 class Cart extends Component {
-
+  //display all items in the cart
+  // render add component and delete component
+  //
   render() {
     return (
       <>
-        Cart
+      
+        <div className="row">
+          <div className="col-6 offset-3">
+            <h1 className="text-center">Shopping Cart</h1>
+              Total Cost: {this.props.totalCost.toFixed(2)} <br/>
+       
+        
+          <ul>
+            {this.props.products.map(p => {
+              return <li key={p.id}>{p.productName} ${p.price.toFixed(2)}</li>
+            })}
+          </ul>
+
+        </div>
+      </div>
+    
+
+      
       </>
     )
   }
-};
+}
+const mapStateToProps = (state) => {
+  return{
+    totalCost: state.totalCost,
+    products: state.cart
+  }
 
-export default Cart;
+}
+export default connect(mapStateToProps, null)(Cart)
 
