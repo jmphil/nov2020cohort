@@ -10,15 +10,27 @@ const Cart = () => {
 
   return <>
   
-    <h1>Shopping Cart</h1>
+        <h1 className="text-center">Shopping Cart</h1>
 
-    <AddProduct />
-    total Cost: ${totalCost}
-    <ul>
-        {products.map(p => {
-            return <li key={p.id}>{p.productName} ${p.price}</li>
-        })}
-    </ul>
+        <div className="row">
+            <div className="col-6 offset-3">
+                <AddProduct />
+                Total Cost: ${Cart.totalCost}
+                <br />
+            <ul>
+            {Cart.products.map((p) => {
+                return (
+                <li key={p.id}>
+                    {p.productName} ${p.price}
+
+                    <DeleteProduct product={p}/>
+                </li>
+                );
+            })}
+            </ul>
+
+            </div>
+        </div>
 
   </>;
 };

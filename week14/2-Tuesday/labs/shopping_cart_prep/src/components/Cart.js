@@ -11,23 +11,29 @@ class Cart extends Component {
   render() {
     return (
       <>
-      
+        <h1 className="text-center">Shopping Cart</h1>
+
         <div className="row">
           <div className="col-6 offset-3">
-            <h1 className="text-center">Shopping Cart</h1>
-              Total Cost: {this.props.totalCost.toFixed(2)} <br/>
-       
-        
-          <ul>
-            {this.props.products.map(p => {
-              return <li key={p.id}>{p.productName} ${p.price.toFixed(2)}</li>
-            })}
-          </ul>
+            <AddProduct />
+            Total Cost: ${this.props.totalCost.toFixed(2)}
+            <br />
+            <ul>
+              {this.props.products.map((p) => {
+                return (
+                  <li key={p.id}>
+                    {p.productName} ${p.price}
 
-        </div>
-      </div>
+                    <DeleteProduct product={p}/>
+                  </li>
+                );
+              })}
+            </ul>
     
+          </div>
+        </div>
 
+     
       
       </>
     )

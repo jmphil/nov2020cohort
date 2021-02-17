@@ -14,18 +14,22 @@ class Cart extends Component {
         <div className="row">
           <div className="col-6 offset-3">
 
+            <AddProduct />
+
             Total Cost: ${this.props.totalCost}
             <br />
             <ul>
-              {this.props.products.map((p) => {
+              {this.props.products.map(p => {
                 return (
                   <li key={p.id}>
                     {p.productName} ${p.price}
+
+                    <DeleteProduct product={p} />
                   </li>
                 );
               })}
             </ul>
-            
+
           </div>
         </div>
       </>

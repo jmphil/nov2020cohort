@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import reducer from './reducers/cartReducer';
+import CartHooks from './components/hooks/Cart';
 
 
 let store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()) //initialize redux - reducer //window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -27,6 +28,7 @@ ReactDOM.render(
             <Route exact path='/' component={App}/>
             <Route path='/cart' component={Cart}/>
             <Route path='/products' component={Products}/>
+            <Route path='/cart_hooks' component={CartHooks}/>
             
           </Switch>
         </BaseLayout>

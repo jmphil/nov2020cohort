@@ -8,7 +8,7 @@ export const addProduct = (product) => {
     }
 }
 // in a real setting, product should be unique id
-export const removeProduct = (product) => {
+export const deleteProduct = (product) => {
     return {
         type: "DELETE_PRODUCT",
         data: product
